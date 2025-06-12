@@ -1,0 +1,14 @@
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/give Dev minecraft:wooden_pickaxe
+/gamemode creative
+/kill me
+/kill
+/gamemode survival
+/gamemode creative
+/summon minecraft:zombie
+/time set day
+/weather clear
