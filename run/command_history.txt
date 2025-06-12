@@ -12,3 +12,4 @@
 /summon minecraft:zombie
 /time set day
 /weather clear
+/reload
