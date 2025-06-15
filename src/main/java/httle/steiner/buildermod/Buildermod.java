@@ -3,6 +3,7 @@ package httle.steiner.buildermod;
 import com.mojang.logging.LogUtils;
 import httle.steiner.buildermod.core.init.ModCreativeTabs;
 import httle.steiner.buildermod.core.init.block.BlockInit;
+import httle.steiner.buildermod.core.init.item.BlockItemInit;
 import httle.steiner.buildermod.core.init.item.ItemInit;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,7 @@ public class Buildermod {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemInit.ITEMS.register(bus);
+        BlockItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         ModCreativeTabs.TABS.register(bus);
     }

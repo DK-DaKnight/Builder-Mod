@@ -1,6 +1,7 @@
 package httle.steiner.buildermod.core.init;
 
 import httle.steiner.buildermod.Buildermod;
+import httle.steiner.buildermod.core.init.item.BlockItemInit;
 import httle.steiner.buildermod.core.init.item.ItemInit;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,10 +19,20 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ItemInit.RUBINE_ITEM.get()))
                     .displayItems((params, output) -> {
                         output.accept(ItemInit.RUBINE_ITEM.get());
-                        output.accept(ItemInit.RUBINE_ORE_ITEM.get());
-                        output.accept(ItemInit.RUBINE_BLOCK_ITEM.get());
+                        output.accept(BlockItemInit.RUBINE_ORE_ITEM.get());
+                        output.accept(BlockItemInit.RUBINE_BLOCK_ITEM.get());
+                        output.accept(ItemInit.RUBINE_APPLE.get());
                     })
-                    .build());
+                    .build()
+    );
+    public static final RegistryObject<CreativeModeTab> TEST_TAB = TABS.register("test_tab",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("Test"))
+                    .icon(() -> new ItemStack(BlockItemInit.RUBINE_ORE_ITEM.get()))
+                    .displayItems((params, output) -> {
+                        output.accept(BlockItemInit.RUBINE_ORE_ITEM.get());
 
-
+                    })
+                    .build()
+    );
 }

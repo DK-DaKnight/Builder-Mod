@@ -13,3 +13,19 @@
 /time set day
 /weather clear
 /reload
+/recipe give @p buildermod:rubine_to_rubine_block
+/give @p buildermod:rubine
+/recipe give @p buildermod:rubine_to_rubine_block
+/recipe give @p buildermod:test_diamond_from_stick
+/recipe give @p buildermod:test_diamond_from_stick.json
+/recipe give @p buildermod:rubine_to_rubine_block
+/recipe give @a *
+/recipe give @p buildermod:rubine_to_rubine_block
+/recipe give @a rubin_to_rubineblock
+/debug start
+/debug stop
+/debug function recipes
+/reload
+/gamemode survival
+/gamemode creative
+/siegheil

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "buildermod:rubine_block"
+    }
+  ],
+  "result": {
+    "item": "buildermod:rubine",
+    "count": 9
+  }
+}

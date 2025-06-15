@@ -11,12 +11,6 @@ import net.minecraftforge.registries.RegistryObject;
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Buildermod.MODID);
 
-//    public static final RegistryObject<Block> SMILE_BLOCK = BLOCKS.register("smile_block",
-//            () -> new Block(BlockBehaviour.Properties
-//                    .ofFullCopy(Blocks.STONE)
-//                    .strength(0.2F, 0.001F)
-//            ));
-
     public static final RegistryObject<Block> RUBINE_ORE = BLOCKS.register("rubine_ore",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
 
